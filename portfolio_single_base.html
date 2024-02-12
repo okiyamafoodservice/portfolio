@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/portfoliostyle.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.3/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <header class="header" id="single">
+      <div class="header__gnavi navi">
+        <h1 class="navi__head">
+          <a href="#pagetop">OKIYAMA'S PORTFOLIO</a>
+        </h1>
+        <ul class="navi__content link">
+          <li class="link__list"><a href="">ABOUT</a></li>
+          <li class="link__list"><a href="#works">WORKS</a></li>
+          <li class="link__list"><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="singlework">
+        <div class="singlework__inner">
+          <h1 class="singlework__head">WORKS</h1>
+          <img
+            class="singlework__topimage"
+            src="./img/worksimage.png"
+            alt="紹介画像"
+          />
+          <p class="singlework__sub">熊野マリンスポーツ推進委員会</p>
+          <h2 class="singlework__title">
+            <a href="https://ofs.thick.jp/beachmarine/"> ブログ「then」 </a>
+          </h2>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">制作ジャンル</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">Webサイト</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">制作期間</p>
+            <p class="ovcontent__part">3ヶ月</p>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">担当</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">リサーチ</li>
+              <li class="ovcontent__part wraplist__content">デザイン</li>
+              <li class="ovcontent__part wraplist__content">コーディング</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">使用技術/ツール</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">Figma</li>
+              <li class="ovcontent__part wraplist__content">
+                Adobe Illustrator
+              </li>
+              <li class="ovcontent__part wraplist__content">
+                Visual Stduio Code
+              </li>
+              <li class="ovcontent__part wraplist__content">HTML</li>
+              <li class="ovcontent__part wraplist__content">CSS</li>
+              <li class="ovcontent__part wraplist__content">JavaScript</li>
+              <li class="ovcontent__part wraplist__content">WordPress</li>
+              <li class="ovcontent__part wraplist__content">ChatGPT</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">使用フォント</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">Noto Sans JP</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">備考</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">
+                トライデントコンピュータ専門学校進級展展示作品
+              </li>
+            </ul>
+          </div>
+
+          <p class="singlework__text">
+            三重県熊野市で開催されるマリンスポーツ大会「ビーチマリンスポーツフェスティバル
+            in ATASHIKAのサイト制作を行いました。
+          </p>
+
+          <div class="tab">
+            <ul class="tabhead__list tab__menu">
+              <li class="tab__menu-item is-active sp" data-tab="01">
+                スマートフォン
+              </li>
+              <li class="tab__menu-item pc" data-tab="02">デスクトップ</li>
+            </ul>
+
+            <div class="tab__panel">
+              <div
+                class="tab__panel-box tab__panel-box001 is-show"
+                data-panel="01"
+              >
+                <div class="singlework__imagebox tabsp">
+                  <img
+                    class="singlework__allworkview"
+                    src="./img/works1__allview_sp.jpg"
+                    alt="全景"
+                  />
+                </div>
+              </div>
+
+              <div class="tab__panel-box tab__panel-box002" data-panel="02">
+                <div class="singlework__imagebox tabpc">
+                  <img
+                    class="singlework__allworkview"
+                    src="./img/works1__allview_pc.jpg"
+                    alt="全景"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="singlework__heading overviewtext">概要</h3>
+          <p class="singlework__text">
+            このイベントは熊野市のマリンスポーツ認知度向上のために開催されています。しかし、認知度向上という名目にも関わらず、周知方法は地元メディアと一部のSNSのみ。
+          </p>
+          <p class="singlework__text">
+            マリンスポーツの目線でも熊野の魅力を知っている、
+            知って欲しい自分にとってはあまりにも勿体無い状況であり、
+            この機会にマーケティングの勉強も兼ねて、
+            熊野市町おこし協力隊とタッグを組むという形で本大会の認知度向上及びサイト制作に関わらせていただくこととなりました。
+          </p>
+
+          <section class="singlework__sec">
+            <h3 class="singlework__heading">Point1</h3>
+            <h4 class="singlework__heading2">
+              「サイトの存在目的」を考えて制作したサイト
+            </h4>
+
+            <p class="singlework__text">
+              このサイトの目的は「大会の参加者を増やすこと」です。
+              そのためには大会の参加者の情報が必要不可欠でした。<br />しかし今までの大会参加者の情報は名前のみ。より詳細な参加者の情報を集めることから始めました。
+              今大会は「他の大会を出し抜く」という目的ではないため、競合は設定していません。
+            </p>
+
+            <div class="singlework__imagebox survey">
+              <img
+                src="./img/survey__write.png"
+                alt="記述式アンケート"
+                class="survey__image write"
+              />
+
+              <img
+                src="./img/survey__mark.png"
+                alt="記述式アンケート"
+                class="survey__image mark"
+              />
+            </div>
+
+            <p class="singlework__text">
+              アンケートは記述式/マーク式の2種類を用意しました。
+              記述式アンケートも共に行なった理由は「参加者との会話によって生の声を聞くため」です。<br />
+              このアンケートにより参加者の具体的な属性や参加理由などを取得できたことで、リアリティのあるペルソナ、KPI/KGIの設定が可能となりました。
+            </p>
+
+            <iframe
+              src="/pdf/persona.pdf"
+              frameborder="0"
+              class="singlework__persona"
+            ></iframe>
+
+            <p class="singlework__text">
+              これらを設定できたことで、サイトの目的を明確にし、最終的な着地点をクライアント側と相談しながら作業を進めることができました。
+            </p>
+          </section>
+
+          <section class="singlework__sec">
+            <h3 class="singlework__heading">Point2</h3>
+            <h4 class="singlework__heading2">真の顧客へ向けたデザイン</h4>
+            <p class="singlework__text">
+              サイト制作側の顧客はクライアント（依頼側）であり、その意向を最大限反映しています。ですが、実際にサイトを閲覧する人（真の顧客）は誰なのか、「見ている人に熊野の魅力が伝わるか」を考えてデザインを行いました。
+            </p>
+            <div class="color">
+              <h5 class="singlework__heading3">配色</h5>
+              <p class="singlework__text">サイトの配色は以下の通りです。</p>
+              <div class="colorbox">
+                <span class="basecolor">ベースカラー #2A89B3</span>
+                <span class="maincolor">メインカラー #FFFFFF</span>
+                <span class="accentcolor">アクセントカラー #DD7C15</span>
+              </div>
+              <p class="singlework__text">
+                このカラーは独断ではなく、先述したアンケートの「熊野市のイメージカラーは何か」という質問の回答と実際に熊野市で体験したシーカヤックとSUPからのイメージを踏まえてクライアントと選定しています。
+              </p>
+              <p class="singlework__text">
+                ベースカラーは熊野市の太平洋、メインカラーは太平洋の波飛沫、アクセントカラーは熊野市の名産のみかんからサンプリングをしています。
+              </p>
+
+              <span class="gradation__ground"></span>
+            </div>
+
+            <p class="singlework__text">
+              トップページの中央部〜下部にかけては背景色にグラデーションをかけており、これは沿岸部から外洋にかけて深い青に染まっていく、熊野の海を表現しています。
+            </p>
+
+            <div class="singlework__imagebox"></div>
+
+            <div class="infoarch">
+              <h5 class="singlework__heading3">情報設計</h5>
+              <p class="singlework__text">
+                情報の整理にも心がけています。<br />
+                クライアント側から「お知らせや追加情報の即時更新を可能にしてほしい」という要望があり、WordPressを用いたサイト構築を行っています。
+              </p>
+              <p class="singlework__text">
+                ただ更新したものを表示するだけであれば良いというわけではなく、カテゴリーごとに分けることで、求めている情報の迅速な確認が可能になると考え、トップページのお知らせ表示セクションはJavaScriptを用いたタブ切り替えによって、情報の取捨選択を可能としました。
+              </p>
+
+              <div class="tab">
+                <ul class="tabhead__list tab__menu">
+                  <li class="tab__menu-item is-active sp" data-tab="01">
+                    スマートフォン
+                  </li>
+                  <li class="tab__menu-item is-active pc" data-tab="02">
+                    デスクトップ
+                  </li>
+                </ul>
+
+                <div class="tab__panel">
+                  <div
+                    class="tab__panel-box tab__panel-box001 is-show"
+                    data-panel="01"
+                  >
+                    <div class="singlework__imagebox tabsp">
+                      <img
+                        class="singlework__infosectionimage"
+                        src="./img/infosectionsp.png"
+                        alt="全景"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="tab__panel-box tab__panel-box002" data-panel="02">
+                    <div class="singlework__imagebox tabpc">
+                      <img
+                        class="singlework__infosectionimage"
+                        src="./img/infosection.png"
+                        alt="全景"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="singlework__text">
+                カテゴリーも色別表示を行っており、一目で判別できるようにしています。
+              </p>
+            </div>
+
+            <div class="catchcopy">
+              <h5 class="singlework__heading3">キャッチコピー</h5>
+              <p class="singlework__text">
+                サイト内のキャッチコピーの制作も担わせていただきました。
+              </p>
+              <div class="maincatch">
+                <p class="singlework__text catchtext">
+                  メインのキャッチコピー「いざ、太平洋へ」
+                </p>
+                <div class="singlework__imagebox">
+                  <img src="./img/maincatch.png" alt="メインキャッチコピー" />
+                </div>
+                <p class="singlework__text">
+                  「いざ、鎌倉へ」という、行動を起こす時、人を奮い立たせる時に使用されている慣用句からサンプリングをしています。一度は聞いたことのあるような文言にすることで、記憶に定着しやすくしています。
+                </p>
+                <p class="singlework__text">
+                  「太平洋」という文言はアンケートの大会参加理由として多くあった「太平洋を漕ぐことができる」という大会の特徴をわかりやすく表しています。
+                </p>
+              </div>
+
+              <div class="maincatch">
+                <p class="singlework__text catchtext">
+                  リードコピー①「誰とでも、どんな人でも」
+                </p>
+                <div class="singlework__imagebox">
+                  <img src="./img/maincatch.png" alt="メインキャッチコピー" />
+                </div>
+                <p class="singlework__text">
+                  本大会は幅広い年齢層、初心者から世界大会出場の上級者までが参加できる大会です。この魅力が一目で伝わるようにしています。
+                </p>
+                <p class="singlework__text">
+                  年齢層は小学生から80歳までと非常に幅広く、どんな人でも挑戦していただきたいという思いがあります。
+                </p>
+              </div>
+
+              <div class="maincatch">
+                <p class="singlework__text catchtext">
+                  リードコピー②「ハンパない、熊野の絶景」
+                </p>
+                <div class="singlework__imagebox">
+                  <img src="./img/maincatch.png" alt="メインキャッチコピー" />
+                </div>
+                <p class="singlework__text">
+                  ハンパないという言葉は私は若者言葉だと思っています。参加者アンケートを分析するに、年齢層は40歳以上が60％を占めていました。ベテランの方々だけではなく若者にもぜひ来てほしい、そんな思いを込めて「ハンパない」という言葉を使用しました。
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="singlework__sec">
+            <h3 class="singlework__heading">Point3</h3>
+            <h4 class="singlework__heading2">
+              Webを学んだ1年の集大成としたサイト
+            </h4>
+
+            <div class="design">
+              <h5 class="singlework__heading3">デザイン</h5>
+              <p class="singlework__text">
+                元々デザイナーになりたくて入学をしているので、デザインには自信がありました。
+                しかしそれはただ自信があっただけで、現実はそうではありませんでした。思うようにベクターも引けない、色合いもおかしい。デザインの4原則「整列/近接/反復/対比」もまともにできていなかったと思います。そんなことはもう1年生の秋で終わり、この制作期間中に毎日1サイト、合計70サイト近くを分析・言語化してまとめたことで、デザインの４原則がどれだけ大切かを学びました。この経験をこのサイト制作/ポートフォリオ制作に活かしています。
+              </p>
+            </div>
+            <div class="coding">
+              <h5 class="singlework__heading3">コーディング</h5>
+              <p class="singlework__text">
+                4月に入学し、その時初めてHTML,CSSに触れました。最初は要素を中央に寄せるプロパティなども全くわからず、強引なコーディングをしていました。ですが勉強していくにつれ、構造を頭の中でイメージできるようになり、BEM及びSassの活用もすることによってスピーディーなコーディングが可能となりました。基本的なコーディングが早くなった分、JavaScriptや難解なCSSのコーディングに時間を割くことができたと思います。
+              </p>
+            </div>
+
+            <div class="Marketing">
+              <h5 class="singlework__heading3">マーケティング</h5>
+              <p class="singlework__text">
+                大学では経営学部でマーケティングを専攻していました。ですが学んだことを活かす機会もなく、活かすことのできる会社にも就職できず、「学んだ意味があったのか」という状態でした。ですがこのサイト制作が「自分が持っているマーケティング知識を実践できる場所」でした。大学時代の知識はほとんど抜けているのでもう一度マーケティングについて勉強、マーケティング検定2級資格を取得することで、「自分の持っているマーケティング知識の見える化」を行い、その時に得た知見を具体的にはマーケティングリサーチやペルソナの設定やKPI/KGIの設定という形でこのサイト制作に活かしています。また、現在ネットマーケティング検定についても勉強中です。
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="./port.js"></script>
+  </body>
+</html>

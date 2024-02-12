@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/portfoliostyle.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.3/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <header class="header" id="single">
+      <div class="header__gnavi navi">
+        <h1 class="navi__head">
+          <a href="portfolio.html#pagetop">OKIYAMA'S PORTFOLIO</a>
+        </h1>
+        <ul class="navi__content link">
+          <li class="link__list"><a href="portfolio.html#works">WORKS</a></li>
+          <li class="link__list"><a href="">ABOUT</a></li>
+          <li class="link__list"><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="singlework">
+        <div class="singlework__inner">
+          <h1 class="singlework__head">WORKS</h1>
+          <img
+            class="singlework__topimage"
+            src="./img/works2image.webp"
+            alt="紹介画像"
+          />
+          <h2 class="singlework__title">
+            <a href="https://ofs.thick.jp/blog"> ブログ「then」 </a>
+          </h2>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">制作ジャンル</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">Webサイト</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">制作期間</p>
+            <p class="ovcontent__part">3ヶ月</p>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">担当</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">デザイン</li>
+              <li class="ovcontent__part wraplist__content">コーディング</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">使用技術/ツール</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">Figma</li>
+              <li class="ovcontent__part wraplist__content">
+                Adobe Illustrator
+              </li>
+              <li class="ovcontent__part wraplist__content">
+                Visual Stduio Code
+              </li>
+              <li class="ovcontent__part wraplist__content">HTML</li>
+              <li class="ovcontent__part wraplist__content">CSS</li>
+              <li class="ovcontent__part wraplist__content">JavaScript</li>
+              <li class="ovcontent__part wraplist__content">WordPress</li>
+              <li class="ovcontent__part wraplist__content">ChatGPT</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">使用フォント</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">
+                Zen Kaku Gothic New
+              </li>
+            </ul>
+          </div>
+
+          <p class="singlework__text">
+            初めて自身でデザイン〜コーディング〜実装を行なった作品です。
+            WordPressを用いた初めての作品でもあります。
+            デザインに2ヶ月、コーディングに1ヶ月、WordPressの実装に2週間かけています。
+          </p>
+
+          <div class="tab">
+            <ul class="tabhead__list tab__menu">
+              <li class="tab__menu-item is-active sp" data-tab="01">
+                スマートフォン
+              </li>
+              <li class="tab__menu-item pc" data-tab="02">デスクトップ</li>
+            </ul>
+
+            <div class="tab__panel">
+              <div
+                class="tab__panel-box tab__panel-box001 is-show"
+                data-panel="01"
+              >
+                <div class="singlework__imagebox tabsp">
+                  <img
+                    class="singlework__allworkview"
+                    src="./img/works2__second_sp.webp"
+                    alt="全景"
+                  />
+                </div>
+              </div>
+
+              <div class="tab__panel-box tab__panel-box002" data-panel="02">
+                <div class="singlework__imagebox tabpc">
+                  <img
+                    class="singlework__allworkview"
+                    src="./img/works2__second_pc.webp"
+                    alt="全景"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="singlework__heading overviewtext">概要</h3>
+          <p class="singlework__text">
+            夏期の課題としてブログを作成しました。使用したCMSはWordPressです。
+            この時のWordPressでの開発経験が後々の進級展作品に活かされています。
+          </p>
+          <p class="singlework__text">
+            最初に制作したものは気に入らなかった、秋ごろにデザインの修正をしています。
+            デザインの修正は2週間かかりました。
+          </p>
+
+          <section class="singlework__sec">
+            <h3 class="singlework__heading">Point1</h3>
+            <h4 class="singlework__heading2">デザイン力とコーディング力</h4>
+
+            <p class="singlework__text">
+              最初のデザインは以下の通りです。（デザインデータです）
+            </p>
+
+            <div class="tab">
+              <ul class="tabhead__list tab__menu">
+                <li class="tab__menu-item is-active sp" data-tab="01">
+                  スマートフォン
+                </li>
+                <li class="tab__menu-item pc" data-tab="02">デスクトップ</li>
+              </ul>
+
+              <div class="tab__panel">
+                <div
+                  class="tab__panel-box tab__panel-box001 is-show"
+                  data-panel="01"
+                >
+                  <div class="singlework__imagebox tabsp">
+                    <img
+                      class="singlework__allworkview"
+                      src="./img/works2_firstsample_sp.webp"
+                      alt="全景"
+                    />
+                  </div>
+                </div>
+
+                <div class="tab__panel-box tab__panel-box002" data-panel="02">
+                  <div class="singlework__imagebox tabpc">
+                    <img
+                      class="singlework__allworkview"
+                      src="./img/works2_firstsample_pc.webp"
+                      alt="全景"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="singlework__text">
+              最初のデザインは「自然」を表現したく、ナチュラルなカラーの選択をしています。
+              一見するとマシなのかなとは思いますが、よく見ると近接具合がおかしかったり、一番気になるのは余白です。サイドの余白が急に広くなっていたり、、、見出しの縦棒と文字が近すぎたり。ロゴもバランスがおかしかったり。
+            </p>
+            <p class="singlework__text">
+              制作当時は「まぁいいか」と思ってしまいましたが、その「まぁいいか」が後々の苦労を生むことになってしまいます。
+            </p>
+
+            <p class="singlework__text">
+              また、デザインを見る限り「タブの切り替え」のようなものがありますが、これは自身に技術力がなかったため、再現することができませんでした。<br />
+              ただ、ここでできなくて悔しい思いがあったので、「
+              <a href="https://ofs.thick.jp/beachmarine/">
+                ビーチマリンスポーツフェスティバル in ATASHIKA </a
+              >」や「 <a href="#"> ポートフォリオ</a>」で実装しています。
+            </p>
+
+            <p class="singlework__text">
+              このように再現したくてもコーディング力や知識がないせいで思うようにいかない悔しさをこの作品では実感しています。
+            </p>
+
+            <p class="singlework__text">
+              このように妥協がいくつもあったので、このデザインが好きになれるかと言われればそうではありませんでした。
+              その結果。秋に2週間をかけてデザインの大幅修正を行なっています。（ここが苦労した）
+            </p>
+
+            <div class="tab">
+              <ul class="tabhead__list tab__menu">
+                <li class="tab__menu-item is-active sp" data-tab="01">
+                  スマートフォン
+                </li>
+                <li class="tab__menu-item pc" data-tab="02">デスクトップ</li>
+              </ul>
+
+              <div class="tab__panel">
+                <div
+                  class="tab__panel-box tab__panel-box001 is-show"
+                  data-panel="01"
+                >
+                  <div class="singlework__imagebox tabsp">
+                    <img
+                      class="singlework__allworkview"
+                      src="./img/works2__second_sp.webp"
+                      alt="全景"
+                    />
+                  </div>
+                </div>
+
+                <div class="tab__panel-box tab__panel-box002" data-panel="02">
+                  <div class="singlework__imagebox tabpc">
+                    <img
+                      class="singlework__allworkview"
+                      src="./img/works2__second_pc.webp"
+                      alt="全景"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="singlework__text">
+              変更後のデザインです。「ブログ」というコンテンツなので「見やすさ」を最大限重視し、余計な装飾を排除しました。
+              デザインの4原則について再度見直し、特に「整列」と「反復」を徹底しています。
+            </p>
+
+            <p class="singlework__text">
+              修正したからとは言え、完璧だとは到底言えないと思います。このポートフォリオ作成にあたってコードを再び見ましたが、現在の自分の主流のコーディング方法である「BEM技法」を用いたSassではないのではっきり言ってコードも見づらいです。
+            </p>
+
+            <p class="singlework__text">
+              しかしこのブログ作成において自分の圧倒的な力不足を感じたので、デザインの分析やコーディング力の向上に努めました。
+            </p>
+
+            <p class="singlework__text">
+              その結果がこのポートフォリオや進級展作品だと捉えていただければ幸いです。
+            </p>
+          </section>
+
+          <section class="singlework__sec">
+            <h3 class="singlework__heading">Point2</h3>
+            <h4 class="singlework__heading2">自由の難しさ</h4>
+            <p class="singlework__text">
+              この課題はWordPressでの実装以外縛りはなく、好きなようにデザインすることができました。
+              その自由さがとても難しいとも感じます。制限があればその分手数やデザインは絞られていきますが、自由というのは無限であるので、どれだけインプットしても足りないものは足りないなと感じます。修正版のデザインについて以下で説明します。
+            </p>
+            <div class="color">
+              <h5 class="singlework__heading3">配色</h5>
+              <p class="singlework__text">ブログの配色は以下の通りです。</p>
+              <div class="colorbox">
+                <span class="basecolor blog">ベースカラー #E6E6E6</span>
+                <span class="maincolor blog">メインカラー #000000</span>
+                <span class="accentcolor blog">アクセントカラー #121212</span>
+              </div>
+              <p class="singlework__text">
+                先述したように、「ブログ」というコンテンツはどんなものかと考えると。基本的には「読む」ことを想定しています。他に「読む」という動詞が使われることは、例えば「本」や「漫画」、「新聞」が挙げられます。
+              </p>
+              <p class="singlework__text">
+                これらのビジュアル面で共通していることは「背景が一色であり、文字色も一色」ではないでしょうか。
+              </p>
+
+              <p class="singlework__text">
+                ここを表現するために、実際の書籍や周りの物から引用して、5種類のカラーパターンを作成しました。
+              </p>
+
+              <h5 class="singlework__heading3">
+                パターン1<span class="pattern__case"
+                  >（ベース#3835d3+テキスト#121212）</span
+                >
+              </h5>
+
+              <div class="pattern">
+                <span class="pattern__1"></span>
+                <p class="singlework__text">
+                  サンプル　[ロールバーン（メモ帳）]
+                </p>
+              </div>
+              <div class="pattern"></div>
+              <h5 class="singlework__heading3">
+                パターン2<span class="pattern__case"
+                  >（ベース#F0F0F0+テキスト#121212）</span
+                >
+              </h5>
+              <span class="pattern__2"></span>
+              <p class="singlework__text">サンプル　[ひらやすみ（漫画）]</p>
+            </div>
+            <div class="pattern">
+              <h5 class="singlework__heading3">
+                パターン3<span class="pattern__case"
+                  >（ベース#0E0E0E+テキスト#767676）</span
+                >
+              </h5>
+              <span class="pattern__3"></span>
+              <p class="singlework__text">
+                サンプル　[Salomon XA PRO（スニーカー）]
+              </p>
+            </div>
+            <div class="pattern">
+              <h5 class="singlework__heading3">
+                パターン4<span class="pattern__case"
+                  >（ベース#3835d3+テキスト#121212）</span
+                >
+              </h5>
+            </div>
+            <div class="pattern">
+              <span class="pattern__4"></span>
+              <p class="singlework__text">サンプル　[ルーズリーフ]</p>
+              <h5 class="singlework__heading3">
+                パターン5<span class="pattern__case"
+                  >（ベース#fdfdfd+テキスト#004333）</span
+                >
+              </h5>
+            </div>
+            <div class="pattern">
+              <span class="pattern__5"></span>
+              <p class="singlework__text">サンプル　[キムワイプ]</p>
+            </div>
+
+            <p class="singlework__text">
+              この中で読みやすい、雰囲気に合うと感じたのが、パターン2の漫画とパターン5のキムワイプから引用したカラーでした。個人的に好きだったのはパターン2だったので、その背景色を気持ち少しだけ明度を落とし、コントラスト比を少しだけ下げることで、チカチカしにくい配色になったと思います。
+            </p>
+
+            <p class="singlework__text">
+              この現物から色をサンプリングすることでデジタルにも、どこかリアリティを感じさせることに気づき、このサンプル方法も進級展作品に活かしています。
+            </p>
+
+            <div class="logo">
+              <h5 class="singlework__heading3">ロゴ</h5>
+              <p class="singlework__text">ブログのロゴも作成しています。</p>
+
+              <p class="singlework__text">
+                ブログタイトルである「then」をそのまま流用したデザインです。
+              </p>
+
+              <div class="bloglogo">
+                <img
+                  src="./img/blog_logo_Notext_white 2.svg"
+                  alt="ブログロゴ黒"
+                  class="bloglogo__image"
+                />
+
+                <img
+                  src="./img/blog_logo_Notext_white 3.svg"
+                  alt="ブログロゴ白"
+                  class="bloglogo__image"
+                />
+              </div>
+
+              <p class="singlework__text">
+                「then」というブログタイトルにはダブルミーニングをしています。
+              </p>
+
+              <ul class="reason">
+                <li class="reason__list">過去を書き記す「then」</li>
+                <li class="reason__list">自身の名前を表す「the N」</li>
+              </ul>
+
+              <p class="singlework__text">
+                ブログは過去のことを書き留めるもの、「あの時」という意味を持つ「then
+                」という言葉
+              </p>
+
+              <p class="singlework__text">Okiyama Naoto、NaotoのN</p>
+
+              <p class="singlework__text">
+                ロゴデザインはそのまま「THEN」という文字列を元に作成しています。
+              </p>
+
+              <p class="singlework__text">最初のロゴは以下の通り。</p>
+
+              <div class="singlework__imagebox">
+                <img src="./img/bloglogo_first.svg" alt="旧ブログロゴ" />
+              </div>
+
+              <p class="singlework__text">
+                Futuraをベースにした、「T」と「N」が大文字のデザインです。
+              </p>
+
+              <p class="singlework__text">
+                簡素でよく伝わるとは思いますが、ただアンバランスすぎるので、文字を使うというコンセプトは残しつつ、再度デザインをしました、
+              </p>
+
+              <div class="singlework__imagebox">
+                <img
+                  src="./img/blog_logo_Notext_white 2.svg"
+                  alt="ブログロゴ黒"
+                  class="bloglogo__image"
+                />
+              </div>
+
+              <p class="singlework__text">
+                「バランス」という点に最大限の注意を払うことで、美しいデザインになったかなと思います。
+              </p>
+              <div class="singlework__imagebox">
+                <img src="./img/logo_detail.webp" alt="ロゴ詳細" />
+              </div>
+              <p class="singlework__text">
+                文字はすべて大文字、ベースのフォントを細めのフォント（Nokora）にすることで、強すぎない、軽い印象にしました。
+              </p>
+
+              <p class="singlework__text">
+                全体的に角張っているので、柔らかい印象を持たせるために、円形のオブジェクトをNに被せる形で配置しました。
+              </p>
+
+              <p class="singlework__text">
+                ただそれだけではNの横に大きな空白が空いてしまい、違和感がありました。BLOGという文字を入れることによって、ちょうど「E」の部分に中心がくる、バランスの取れたデザインに仕上げています。
+              </p>
+
+              <p class="singlework__text">
+                このブログのデザインは「誰かに指定された、誰かの意見を反映させる」のではなく、自分の意見のみで完成していくものでした。自由すぎるが故の「難しさ」というものをこの課題を通して実感しました。
+              </p>
+            </div>
+          </section>
+
+          <section class="singlework__sec">
+            <h3 class="singlework__heading">Point3</h3>
+            <h4 class="singlework__heading2">綺麗なコードを書く大切さ</h4>
+
+            <p class="singlework__text">
+              今回が初めてのWordPressを用いた開発でした。この課題までは特にコードを書く際のクラス名などの命名規則はほとんど気にしたことがありませんでした。
+            </p>
+
+            <p class="singlework__text">
+              汚いコードを書いているつもりはありませんが、見にくいコードであることは確かです。
+            </p>
+
+            <p class="singlework__text">
+              今一度このポートフォリオを作成するにあたって、振り返ると「ここをこうするべきだ」「こんな感じに綺麗にかくとすごく見やすいのに」など思う場所がたくさんあります。
+            </p>
+
+            <p class="singlework__text">
+              また、WordPressを実装する際には綺麗なコードを書いておくことで、後々変数などを当てはめていくときの楽さが圧倒的に異なります。
+            </p>
+
+            <p class="singlework__text">
+              この時から綺麗に書いておけばよかったのですが、逆にこの時に綺麗に書けなかった、苦労したことで後々のコーディングで「綺麗に書こう」と意識することができたのだと思います。
+            </p>
+
+            <p class="singlework__text">
+              このブログの作成経験は自信のWebの開発に対しての向き合い方を大きく変えてくれた課題だと思います。
+            </p>
+          </section>
+
+          <div class="backlist">
+            <a class="backlist__btn" href="portfolio.html#works"
+              >BACK TO LIST</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <small><p>&copy; Okiyama Naoto 2024</p></small>
+      </div>
+    </footer>
+    <script src="./port.js"></script>
+  </body>
+</html>

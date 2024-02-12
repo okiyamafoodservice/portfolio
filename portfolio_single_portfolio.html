@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/portfoliostyle.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.3/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <header class="header" id="single">
+      <div class="header__gnavi navi">
+        <h1 class="navi__head">
+          <a href="portfolio.html#pagetop">OKIYAMA'S PORTFOLIO</a>
+        </h1>
+        <ul class="navi__content link">
+          <li class="link__list"><a href="portfolio.html#works">WORKS</a></li>
+          <li class="link__list"><a href="">ABOUT</a></li>
+          <li class="link__list"><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="singlework">
+        <div class="singlework__inner">
+          <h1 class="singlework__head">WORKS</h1>
+          <img
+            class="singlework__topimage"
+            src="./img/works6image.webp"
+            alt="紹介画像"
+          />
+          <p class="singlework__sub">沖山直渡就職活動用ポートフォリオ</p>
+          <h2 class="singlework__title">OKIYAMA'S PORTFOLIO</h2>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">制作ジャンル</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">Webサイト</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">制作期間</p>
+            <p class="ovcontent__part">1週間</p>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">担当</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">デザイン</li>
+              <li class="ovcontent__part wraplist__content">コーディング</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">使用技術/ツール</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">Figma</li>
+              <li class="ovcontent__part wraplist__content">
+                Adobe Illustrator
+              </li>
+              <li class="ovcontent__part wraplist__content">Adobe Photoshop</li>
+              <li class="ovcontent__part wraplist__content">
+                Visual Stduio Code
+              </li>
+              <li class="ovcontent__part wraplist__content">HTML</li>
+              <li class="ovcontent__part wraplist__content">CSS</li>
+              <li class="ovcontent__part wraplist__content">Sass</li>
+              <li class="ovcontent__part wraplist__content">BEM</li>
+              <li class="ovcontent__part wraplist__content">JavaScript</li>
+              <li class="ovcontent__part wraplist__content">GSAP</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">使用フォント</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">
+                Zen Kaku Gothic New
+              </li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">LINK</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">
+                <a href="https://ofs.thick.jp/portfolio/portfolio.html">
+                  OKIYAMA'S PORTFOLIO
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <p class="singlework__text">
+            就職活動に向けて仮段階のポートフォリオを作成しました。
+          </p>
+
+          <div class="tab">
+            <ul class="tabhead__list tab__menu">
+              <li class="tab__menu-item is-active sp" data-tab="01">
+                スマートフォン
+              </li>
+              <li class="tab__menu-item pc" data-tab="02">デスクトップ</li>
+            </ul>
+
+            <div class="tab__panel">
+              <div
+                class="tab__panel-box tab__panel-box001 is-show"
+                data-panel="01"
+              >
+                <div class="singlework__imagebox tabsp">
+                  <img
+                    class="singlework__allworkview"
+                    src="./img/works6__allview_sp.webp"
+                    alt="全景"
+                  />
+                </div>
+              </div>
+
+              <div class="tab__panel-box tab__panel-box002" data-panel="02">
+                <div class="singlework__imagebox tabpc">
+                  <img
+                    class="singlework__allworkview"
+                    src="./img/works6__allview_pc.webp"
+                    alt="全景"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="singlework__heading overviewtext">概要</h3>
+          <p class="singlework__text">
+            制作に充てる時間が資格の試験や学内のイベントと重なり実質1週間程度で完成させることになりました。「計画性」が問われる成果物でした。
+          </p>
+          <p class="singlework__text">
+            「Webについて１年間勉強してきた自分が、時間をかけずにどれだけの作業をこなすことができるのか」という指標にもなったと思います。
+          </p>
+
+          <section class="singlework__sec">
+            <h3 class="singlework__heading">Point1</h3>
+            <h4 class="singlework__heading2">短時間で高い完成度のために</h4>
+
+            <p class="singlework__text">
+              デザインのデータ作成からコーディング、完成までの時間はわずか2週間。実際このポートフォリオの作成ができた日数は1週間もなかったと思います。
+            </p>
+
+            <p class="singlework__text">
+              計画は<br />
+              「デザインはワイヤーフレームとデザインデータ含めて、トップページに1日、成果物ページに2日」
+              <br />「コーディングに4日」<br />合計6日です。
+            </p>
+
+            <p class="singlework__text">
+              短時間でのデザインであれば、デザインの4原則を徹底することで、それなりにスムーズかつ見やすいデザインにすることができます。問題はコーディングです。
+            </p>
+
+            <p class="singlework__text">
+              「短時間でコーディングを行うことができる、後々見やすい」と考えた結果、BEMとSassを用いればクラス名を流用すること、関数を使うことで早く正確なコーディングができると結論づけました。
+            </p>
+
+            <div class="singlework__imagebox">
+              <img src="./img/codeimage.webp" alt="コーディング" />
+            </div>
+
+            <h5 class="singlework__heading3">JavaScript</h5>
+            <p class="singlework__text">
+              JavaScriptに関しても今回、一から書くことはせずに自分が過去に作成したものやライブラリを流用、改変する形で使用しています。
+            </p>
+
+            <p class="singlework__text">
+              ただしファーストビューのGSAPでのアニメーションに関しては「自分の個性を出す」ためにゼロから作成しています。
+            </p>
+          </section>
+
+          <section class="singlework__sec">
+            <h3 class="singlework__heading">Point2</h3>
+            <h4 class="singlework__heading2">見やすさを追求</h4>
+            <p class="singlework__text">
+              ただ見やすいデザインでなければどんなに早いコーディングをしたところで意味がありません。
+            </p>
+            <div class="color">
+              <h5 class="singlework__heading3">配色</h5>
+              <p class="singlework__text">サイトの配色は以下の通りです。</p>
+              <div class="colorbox">
+                <span class="basecolor portfolio">ベースカラー #FFFFFF</span>
+                <span class="maincolor portfolio">メインカラー#ECECEC</span>
+                <span class="accentcolor portfolio"
+                  >アクセントカラー #11F340</span
+                >
+              </div>
+              <p class="singlework__text">
+                ベースカラーとメインカラーは白とグレーのマッチ具合が結構好きだったので意外とすんなり決まりましたが、アクセントカラーの決定に非常に苦労をしました。
+              </p>
+              <p class="singlework__text">
+                見やすい反面、逆にその見やすさを意識しすぎるとどこか堅い印象になってしまうのではないか、と考えました。
+              </p>
+
+              <p class="singlework__text">
+                そこでヒントを得たのが「登山用テント」です。
+              </p>
+
+              <p class="singlework__text">
+                自分は趣味で登山をしているのですが、そのテントに答えがありました。
+              </p>
+
+              <div class="singlework__imagebox">
+                <img src="./img/karasawa.webp" alt="山岳テント" />
+              </div>
+
+              <p class="singlework__text">
+                登山用テントは目立たせるために、あえてビビッドなカラーを使用することが多いのですが、ビビッドなのに雪山や岩稜地帯でも目立ちながらも馴染んでいるな。という印象がありました。
+              </p>
+
+              <p class="singlework__text">
+                このことよりアクセントカラーを自身の持っているテントに近いカラーの「#11F340」として決定しました。
+                この他、フッターやボタンにも山岳テントのカラーリングを引用しています。
+              </p>
+
+              <h5 class="singlework__heading3">レイアウト</h5>
+              <h5 class="singlework__heading3">グリッドレイアウト</h5>
+              <p class="singlework__text">
+                レイアウトはグリッドレイアウトを取り入れています。
+              </p>
+              <p class="singlework__text">
+                グリッドレイアウトとは要素を格子状に並べて構成していくデザインで、すっきり見やすい特徴があります。
+                また、情報の更新やレスポンシブ対応にも優れていて、ポートフォリオなど一目でたくさん見せたいデザインとする場合に威力を発揮します。
+              </p>
+
+              <div class="singlework__imagebox">
+                <img src="./img/works6__grid.webp" alt="グリッドレイアウト" />
+              </div>
+            </div>
+
+            <p class="singlework__text">
+              細かいポイントですが、このグリッドレイアウトはflex
+              boxを用いて実現しています。しかしこの場合
+              1行の要素数が3個、要素が5個になった場合、中央が空いてしまうトラブルが発生します。このケースが擬似要素を用いて対策済みです。
+            </p>
+
+            <h5 class="singlework__heading3">レスポンシブの見せ方</h5>
+
+            <p class="singlework__text">
+              レスポンシブ対応しているサイトについての表示方法ですが、スマートフォンではタブの切り替えを流用することで、見やすさの向上に心がけています。
+            </p>
+
+            <div class="singlework__imagebox tabs">
+              <img src="./img/works6__tabs_sp.webp" alt="タブ切り替え" />
+              <img src="./img/works6__tabs_pc.webp" alt="タブ切り替え" />
+            </div>
+
+            <p class="singlework__text">
+              実はこのタブの切り替えはブログのデザインでできなくて非常に悔しかった箇所です。このように今では使えるようになっているので、夏の自分との差が実感できます。
+            </p>
+          </section>
+
+          <section class="singlework__sec">
+            <h4 class="singlework__heading2">制作を終えて</h4>
+
+            <p class="singlework__text">
+              ギリギリ終えることができて、自分との勝負に勝つことができたと思います。
+            </p>
+
+            <p class="singlework__text">
+              計画性やタスク管理の話は今まで散々聞かされてきましたが、このように課題が詰まった時に計画性が物を言うんだなと実感しました。
+            </p>
+
+            <p class="singlework__text">
+              また、今までのどの作品も明確な理由を持たせたデザインを行なってきたことで、作品の説明が書きやすかったです。
+              理由を考えて取り組むことで、芯の通った作品ができるのではないでしょうか。
+            </p>
+          </section>
+
+          <div class="backlist">
+            <a class="backlist__btn" href="portfolio.html#works"
+              >BACK TO LIST</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <small><p>&copy; Okiyama Naoto 2024</p></small>
+      </div>
+    </footer>
+    <script src="./port.js"></script>
+  </body>
+</html>

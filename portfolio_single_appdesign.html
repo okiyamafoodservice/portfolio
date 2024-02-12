@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/portfoliostyle.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.3/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <header class="header" id="single">
+      <div class="header__gnavi navi">
+        <h1 class="navi__head">
+          <a href="portfolio.html#pagetop">OKIYAMA'S PORTFOLIO</a>
+        </h1>
+        <ul class="navi__content link">
+          <li class="link__list"><a href="portfolio.html#works">WORKS</a></li>
+          <li class="link__list"><a href="">ABOUT</a></li>
+          <li class="link__list"><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="singlework">
+        <div class="singlework__inner">
+          <h1 class="singlework__head">WORKS</h1>
+          <img
+            class="singlework__topimage"
+            src="./img/works4image.png"
+            alt="紹介画像"
+          />
+          <p class="singlework__sub">漫画アプリUIデザイン</p>
+          <h2 class="singlework__title">知るコミ</h2>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">制作ジャンル</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">UI/UXデザイン</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">制作期間</p>
+            <p class="ovcontent__part">20時間</p>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">担当</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">デザイン</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">使用技術/ツール</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">Figma</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">使用フォント</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">Noto Sans JP</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">備考</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">
+                Figmaのプロトタイプ機能を活用して作成しています。<br />
+                動作動画も併せてご覧ください
+              </li>
+            </ul>
+
+            <iframe
+              class="presenslide"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/1SJCexxKE7A?si=tXxwyvnpSre1Kiua"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <iframe
+            class="presenslide"
+            style="border: 1px solid rgba(0, 0, 0, 0.1)"
+            width="800"
+            height="450"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FrYZv8bTqVtwGtt8JEL64M5%2Fapp_design%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DXGeAsnk4Fgl0hefP-1"
+            allowfullscreen
+          ></iframe>
+
+          <h3 class="singlework__heading overviewtext">概要</h3>
+          <p class="singlework__text">
+            ペルソナをもとに漫画アプリの企画〜デザインまでを行いました。
+          </p>
+
+          <p class="singlework__text">
+            素材は二次利用フリーの漫画を使用しています。
+          </p>
+
+          <section class="singlework__sec">
+            <h3 class="singlework__heading">Point1</h3>
+            <h4 class="singlework__heading2">ペルソナの分析</h4>
+
+            <p class="singlework__text">
+              以下のペルソナを課題として与えられました。
+            </p>
+
+            <ul class="personalist">
+              <li class="personalist__list">
+                10代学生 • 佐々木 憲男(男) • 大学生(福祉系)・19歳・独身
+              </li>
+              <li class="personalist__list">
+                趣味:登山・キャンプ・釣りなど、休日は仲間と一緒にアウトドアにハマっている。
+              </li>
+              <li class="personalist__list">性格は、真面目で几帳面</li>
+              <li class="personalist__list">
+                スマートフォンは必需品で、余暇などにはゲームやマンガ、動画などをみている。また、仲間との連絡、授業での調べ物など、すべてスマートフォンで完結している。
+              </li>
+              <li class="personalist__list">
+                ある日、急に授業が休講となり、次の授業まで時間が
+                空いたので学食でランチを食べた後、時間を潰すことにした。
+              </li>
+              <li class="personalist__list">
+                近年コロナ
+                禍で医療現場が注目されているので、現実的な医療現場の状況を写した
+                「ブラックジャックによろしく」を読み始めた。
+                ドラマ化もされているので、内容はとても面白いし、自分の専門分野に関する学びも多い。
+              </li>
+              <li class="personalist__list">
+                学食の椅子に座って、日替わりAランチ「ハンバーク定食」に付いてきたコーヒーを飲みながら、マンガを読みながら次の授業を待っている。
+              </li>
+            </ul>
+
+            <p class="singlework__text">
+              このペルソナから読み取れる消費者のニーズは「時間を潰したい」
+            </p>
+
+            <p class="singlework__text">
+              想定される消費者のウォンツは「時間が潰せるくらいで漫画を読みたい」「漫画を読みながら学びたい」
+            </p>
+
+            <p class="singlework__text">
+              これより企画側は消費者に対して「漫画を読みながらも学びを得ることができる、かつ時間管理ができる」というものを提供できるアプリを開発する。ということがニーズ・ウォンツの実現のさせ方となります。
+            </p>
+          </section>
+
+          <section class="singlework__sec">
+            <h3 class="singlework__heading">Point2</h3>
+            <h4 class="singlework__heading2">UI/UX視点</h4>
+            <p class="singlework__text">
+              これまではWebサイトのデザインについて勉強をしてきましたが、UI/UXについては特に触れていませんでした。
+            </p>
+            <div class="color">
+              <h5 class="singlework__heading3">配色</h5>
+              <p class="singlework__text">サイトの配色は以下の通りです。</p>
+              <div class="colorbox">
+                <span class="basecolor">ベースカラー #2A89B3</span>
+                <span class="maincolor">メインカラー #FFFFFF</span>
+                <span class="accentcolor">アクセントカラー #DD7C15</span>
+              </div>
+              <p class="singlework__text">
+                このカラーは独断ではなく、先述したアンケートの「熊野市のイメージカラーは何か」という質問の回答と実際に熊野市で体験したシーカヤックとSUPからのイメージを踏まえてクライアントと選定しています。
+              </p>
+              <p class="singlework__text">
+                ベースカラーは熊野市の太平洋、メインカラーは太平洋の波飛沫、アクセントカラーは熊野市の名産のみかんからサンプリングをしています。
+              </p>
+
+              <span class="gradation__ground"></span>
+            </div>
+
+            <p class="singlework__text">
+              トップページの中央部〜下部にかけては背景色にグラデーションをかけており、これは沿岸部から外洋にかけて深い青に染まっていく、熊野の海を表現しています。
+            </p>
+
+            <div class="singlework__imagebox"></div>
+
+            <div class="infoarch">
+              <h5 class="singlework__heading3">情報設計</h5>
+              <p class="singlework__text">
+                情報の整理にも心がけています。<br />
+                クライアント側から「お知らせや追加情報の即時更新を可能にしてほしい」という要望があり、WordPressを用いたサイト構築を行っています。
+              </p>
+              <p class="singlework__text">
+                ただ更新したものを表示するだけであれば良いというわけではなく、カテゴリーごとに分けることで、求めている情報の迅速な確認が可能になると考え、トップページのお知らせ表示セクションはJavaScriptを用いたタブ切り替えによって、情報の取捨選択を可能としました。
+              </p>
+
+              <div class="tab">
+                <ul class="tabhead__list tab__menu">
+                  <li class="tab__menu-item is-active sp" data-tab="01">
+                    スマートフォン
+                  </li>
+                  <li class="tab__menu-item is-active pc" data-tab="02">
+                    デスクトップ
+                  </li>
+                </ul>
+
+                <div class="tab__panel">
+                  <div
+                    class="tab__panel-box tab__panel-box001 is-show"
+                    data-panel="01"
+                  >
+                    <div class="singlework__imagebox tabsp">
+                      <img
+                        class="singlework__infosectionimage"
+                        src="./img/infosectionsp.png"
+                        alt="全景"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="tab__panel-box tab__panel-box002" data-panel="02">
+                    <div class="singlework__imagebox tabpc">
+                      <img
+                        class="singlework__infosectionimage"
+                        src="./img/infosection.png"
+                        alt="全景"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="singlework__text">
+                カテゴリーも色別表示を行っており、一目で判別できるようにしています。
+              </p>
+            </div>
+
+            <div class="catchcopy">
+              <h5 class="singlework__heading3">キャッチコピー</h5>
+              <p class="singlework__text">
+                サイト内のキャッチコピーの制作も担わせていただきました。
+              </p>
+              <div class="maincatch">
+                <p class="singlework__text catchtext">
+                  メインのキャッチコピー「いざ、太平洋へ」
+                </p>
+                <div class="singlework__imagebox">
+                  <img src="./img/maincatch.png" alt="メインキャッチコピー" />
+                </div>
+                <p class="singlework__text">
+                  「いざ、鎌倉へ」という、行動を起こす時、人を奮い立たせる時に使用されている慣用句からサンプリングをしています。一度は聞いたことのあるような文言にすることで、記憶に定着しやすくしています。
+                </p>
+                <p class="singlework__text">
+                  「太平洋」という文言はアンケートの大会参加理由として多くあった「太平洋を漕ぐことができる」という大会の特徴をわかりやすく表しています。
+                </p>
+              </div>
+
+              <div class="maincatch">
+                <p class="singlework__text catchtext">
+                  リードコピー①「誰とでも、どんな人でも」
+                </p>
+                <div class="singlework__imagebox">
+                  <img src="./img/maincatch.png" alt="メインキャッチコピー" />
+                </div>
+                <p class="singlework__text">
+                  本大会は幅広い年齢層、初心者から世界大会出場の上級者までが参加できる大会です。この魅力が一目で伝わるようにしています。
+                </p>
+                <p class="singlework__text">
+                  年齢層は小学生から80歳までと非常に幅広く、どんな人でも挑戦していただきたいという思いがあります。
+                </p>
+              </div>
+
+              <div class="maincatch">
+                <p class="singlework__text catchtext">
+                  リードコピー②「ハンパない、熊野の絶景」
+                </p>
+                <div class="singlework__imagebox">
+                  <img src="./img/maincatch.png" alt="メインキャッチコピー" />
+                </div>
+                <p class="singlework__text">
+                  ハンパないという言葉は私は若者言葉だと思っています。参加者アンケートを分析するに、年齢層は40歳以上が60％を占めていました。ベテランの方々だけではなく若者にもぜひ来てほしい、そんな思いを込めて「ハンパない」という言葉を使用しました。
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="singlework__sec">
+            <h3 class="singlework__heading">Point3</h3>
+            <h4 class="singlework__heading2">
+              Webを学んだ1年の集大成としたサイト
+            </h4>
+
+            <div class="design">
+              <h5 class="singlework__heading3">デザイン</h5>
+              <p class="singlework__text">
+                元々デザイナーになりたくて入学をしているので、デザインには自信がありました。
+                しかしそれはただ自信があっただけで、現実はそうではありませんでした。思うようにベクターも引けない、色合いもおかしい。デザインの4原則「整列/近接/反復/対比」もまともにできていなかったと思います。そんなことはもう1年生の秋で終わり、この制作期間中に毎日1サイト、合計70サイト近くを分析・言語化してまとめたことで、デザインの４原則がどれだけ大切かを学びました。この経験をこのサイト制作/ポートフォリオ制作に活かしています。
+              </p>
+            </div>
+            <div class="coding">
+              <h5 class="singlework__heading3">コーディング</h5>
+              <p class="singlework__text">
+                4月に入学し、その時初めてHTML,CSSに触れました。最初は要素を中央に寄せるプロパティなども全くわからず、強引なコーディングをしていました。ですが勉強していくにつれ、構造を頭の中でイメージできるようになり、BEM及びSassの活用もすることによってスピーディーなコーディングが可能となりました。基本的なコーディングが早くなった分、JavaScriptや難解なCSSのコーディングに時間を割くことができたと思います。
+              </p>
+            </div>
+
+            <div class="Marketing">
+              <h5 class="singlework__heading3">マーケティング</h5>
+              <p class="singlework__text">
+                大学では経営学部でマーケティングを専攻していました。ですが学んだことを活かす機会もなく、活かすことのできる会社にも就職できず、「学んだ意味があったのか」という状態でした。ですがこのサイト制作が「自分が持っているマーケティング知識を実践できる場所」でした。大学時代の知識はほとんど抜けているのでもう一度マーケティングについて勉強、マーケティング検定2級資格を取得することで、「自分の持っているマーケティング知識の見える化」を行い、その時に得た知見を具体的にはマーケティングリサーチやペルソナの設定やKPI/KGIの設定という形でこのサイト制作に活かしています。また、現在ネットマーケティング検定についても勉強中です。
+              </p>
+            </div>
+          </section>
+
+          <div class="backlist">
+            <a class="backlist__btn" href="portfolio.html#works"
+              >BACK TO LIST</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <small><p>&copy; Okiyama Naoto 2024</p></small>
+      </div>
+    </footer>
+    <script src="./port.js"></script>
+  </body>
+</html>

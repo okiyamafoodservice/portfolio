@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/portfoliostyle.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.3/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <header class="header" id="single">
+      <div class="header__gnavi navi">
+        <h1 class="navi__head">
+          <a href="portfolio.html#pagetop">OKIYAMA'S PORTFOLIO</a>
+        </h1>
+        <ul class="navi__content link">
+          <li class="link__list"><a href="portfolio.html#works">WORKS</a></li>
+          <li class="link__list"><a href="#works">WORKS</a></li>
+          <li class="link__list"><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="singlework">
+        <div class="singlework__inner">
+          <h1 class="singlework__head">WORKS</h1>
+          <img
+            class="singlework__topimage"
+            src="./img/card_01.webp"
+            alt="名刺デザイン"
+          />
+          <p class="singlework__sub">自主制作</p>
+          <h2 class="singlework__title">個人用名刺</h2>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">制作ジャンル</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">名刺</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">制作期間</p>
+            <p class="ovcontent__part">4時間</p>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">担当</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">デザイン</li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">使用技術/ツール</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">Adobe Photoshop</li>
+              <li class="ovcontent__part wraplist__content">
+                ラクスル オンラインデザインサービス
+              </li>
+            </ul>
+          </div>
+
+          <div class="singlework__overview ovcontent">
+            <p class="ovcontent__head">使用フォント</p>
+            <ul class="ovcontent__wrap wraplist">
+              <li class="ovcontent__part wraplist__content">新ゴL</li>
+              <li class="ovcontent__part wraplist__content">ゴシックMB101 L</li>
+              <li class="ovcontent__part wraplist__content">M PLUS1P</li>
+            </ul>
+          </div>
+
+          <p class="singlework__text">
+            勉強会及び進級展の時に使用する個人用名刺を作成しました。
+          </p>
+
+          <div class="singlework__imagebox namecard">
+            <img
+              class="omote"
+              src="./img/namecard_front.webp"
+              alt="名刺の表面"
+            />
+
+            <img class="ura" src="./img/namecard_rear.webp" alt="名刺の裏面" />
+          </div>
+
+          <h3 class="singlework__heading overviewtext">概要</h3>
+          <p class="singlework__text">
+            デザインはラクスルのオンラインデザインサービスで作成、そのままラクスルにて印刷をしています。モックアップデータ作成およびオーブンバッヂの背景投下のためにAdobe
+            Photoshopを使用しました。
+          </p>
+
+          <section class="singlework__sec">
+            <h3 class="singlework__heading">Point1</h3>
+            <h4 class="singlework__heading2">Linktreeの使用</h4>
+
+            <p class="singlework__text">
+              表紙表面に
+              <a
+                class="linktree__link"
+                target="_blank"
+                href="https://linktr.ee/NaotoOkiyama"
+                >Linktree</a
+              >のQRコードを掲載しています。
+            </p>
+            <div class="singlework__imagebox linktree">
+              <a
+                class="linktree__link"
+                target="_blank"
+                href="https://linktr.ee/NaotoOkiyama"
+                ><img
+                  src="./img/linktree.png"
+                  alt="リンクツリーQR"
+                  class="linktree__qr"
+                />
+              </a>
+            </div>
+            <p class="singlework__text">
+              Linktreeとは複数のリンクをまとめて１ページに掲載できるサービスのことで
+              、私の場合は名刺に「ポートフォリオ」と「オープンバッヂの公開用URL」を掲載したかったので、今回活用しています。
+            </p>
+
+            <p class="singlework__text">
+              Linktreeを使うことで、1つのQRコードで複数のURLにアクセスしてもらえるので、名刺のデザインを崩すことなく情報を詰め込むことができます。
+            </p>
+
+            <p class="singlework__text">
+              また、URLを随時追加できるので、情報に変更があった場合に名刺のデザインを変更しなくて済むというメリットもあります。
+            </p>
+          </section>
+
+          <section class="singlework__sec">
+            <h3 class="singlework__heading">Point2</h3>
+            <h4 class="singlework__heading2">デザイン</h4>
+            <p class="singlework__text">
+              表面はインパクトのあるようなデザイン。裏面は見やすいように、情報を整理しています。
+            </p>
+
+            <div class="front">
+              <h5 class="singlework__heading3">表面</h5>
+              <p class="singlework__text">
+                ベースカラーに<span class="navy">#12325B</span
+                >、<br />テキストカラーに<span class="orange">#FF914D</span
+                >を使用しています。
+              </p>
+
+              <p class="singlework__text">
+                このカラーを選択した理由は、単に自分が好きな2色である。という理由のみです。
+              </p>
+
+              <div class="singlework__imagebox namecard">
+                <img
+                  class="omote"
+                  src="./img/namecard_front.webp"
+                  alt="名刺の表面"
+                />
+              </div>
+
+              <p class="singlework__text">
+                上部の氏名の右横の三角は「山」を表しています。
+              </p>
+
+              <p class="singlework__text">
+                名前及びQRコードの配置位置に関しては、名刺入れにしまった時に最初に見えるであろう位置に置くことで、見つけてもらいやすくする。という考えのもと設定しています。
+              </p>
+            </div>
+
+            <div class="back">
+              <h5 class="singlework__heading3">裏面</h5>
+              <p class="singlework__text">
+                裏面には自分の情報を見やすく整理しています。
+              </p>
+              <div class="singlework__imagebox namecard">
+                <img
+                  class="ura"
+                  src="./img/namecard_rear.webp"
+                  alt="名刺の裏面"
+                />
+              </div>
+
+              <p class="singlework__text">
+                裏面のデザインでは「デザインしすぎない」という点に注意をしました。
+              </p>
+
+              <p class="singlework__text">
+                この名刺は作品である以前に、相手に対して自分の情報をお渡しすることにあるので、
+              </p>
+              <ul class="namecard">
+                <li class="namecard__list">所属</li>
+                <li class="namecard__list">保有資格</li>
+                <li class="namecard__list">氏名</li>
+                <li class="namecard__list">連絡先</li>
+                <li class="namecard__list">オープンバッジ</li>
+              </ul>
+
+              <p class="singlework__text">にとどめています。</p>
+
+              <p class="singlework__text">
+                ですが、きちんと余白を設け、デザインの4原則に則って作成したため、情報が整理され洗練されていると
+                名刺交換の際に褒めていただくこともありました。
+              </p>
+            </div>
+          </section>
+          <div class="backlist">
+            <a class="backlist__btn" href="portfolio.html#works"
+              >BACK TO LIST</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <small><p>&copy; Okiyama Naoto 2024</p></small>
+      </div>
+    </footer>
+    <script src="./port.js"></script>
+  </body>
+</html>
