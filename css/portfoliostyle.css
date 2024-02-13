@@ -296,6 +296,26 @@ h1 {
 .vision__detail--button:hover {
   background-color: #ff1010;
 }
+.vision .contact {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3.125em;
+}
+.vision .contact__button {
+  background-color: #008897;
+  font-size: 1.375rem;
+  text-align: center;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 0.625em;
+}
+.vision .contact__button:hover {
+  background-color: #ff1040;
+}
 
 .footer {
   background-color: #fdfe3c;
@@ -502,6 +522,11 @@ h1 {
 .singlework .ovcontent .wraplist__content a {
   display: block;
   color: #121212;
+  border-bottom: 1px solid #121212;
+  transition: 0.2s;
+}
+.singlework .ovcontent .wraplist__content a:hover {
+  color: #ff8800;
 }
 .singlework .presenslide {
   margin: 1.25rem 0;
@@ -1047,6 +1072,27 @@ h1 {
 .header__name {
   margin-top: 40vh;
   font-size: 4.375rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.about__head {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.license__image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10%;
+  margin-top: 1.875em;
+}
+.license__image--list {
+  width: 30%;
 }
 
 .image__box {
@@ -1058,5 +1104,127 @@ h1 {
   margin-right: auto;
   margin-left: auto;
   width: 30%;
+}
+
+.about {
+  margin-left: auto;
+  margin-right: auto;
+  width: 92.3076923077%;
+}
+.about .heading__2 {
+  font-size: 1.125rem;
+  margin-bottom: 0.625em;
+}
+.about__content {
+  margin-bottom: 1.875em;
+}
+.about__text {
+  font-size: 0.875em;
+  margin-bottom: 0.3125em;
+}
+.about__text span {
+  display: inline-block;
+}
+.about__dl {
+  display: flex;
+  gap: 10%;
+  margin-bottom: 0.625em;
+}
+.about__dt {
+  font-size: 0.875rem;
+}
+.about__dd {
+  font-size: 0.875rem;
+}
+
+.skill__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.skill__content {
+  width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.topback__button {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #0d0097;
+  font-size: 1.375rem;
+  text-align: center;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 0.625em;
+}
+.topback__button:hover {
+  background-color: #ff1010;
+}
+
+.contact {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3.125em;
+}
+.contact__button {
+  background-color: #53c0ff;
+  font-size: 1.375rem;
+  text-align: center;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 0.625em;
+}
+.contact__button:hover {
+  background-color: #ff1040;
+}
+
+@media (min-width: 900px) {
+  .header__name {
+    margin-top: 20vh;
+    font-size: 4.375rem;
+  }
+  .image__box {
+    margin-right: auto;
+    margin-left: auto;
+    margin: 3.125em auto;
+  }
+  .image__box img {
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+  }
+}
+@media (min-width: 651px) {
+  .license__image {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5%;
+  }
+  .license__image--list {
+    width: 10%;
+  }
+  .skill__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .skill__content {
+    width: 20%;
+    margin-bottom: 1.25em;
+  }
 }
 /*# sourceMappingURL=portfoliostyle.css.map */

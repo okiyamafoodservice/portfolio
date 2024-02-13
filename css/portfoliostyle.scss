@@ -329,6 +329,23 @@ h1 {
       }
     }
   }
+
+  .contact {
+    @include mx();
+    margin-top: (50em/16);
+    &__button {
+      background-color: #008897;
+      font-size: (22rem/16);
+      text-align: center;
+      display: block;
+      width: fit-content;
+      @include mx();
+      padding: (0) (10em/16);
+      &:hover {
+        background-color: #ff1040;
+      }
+    }
+  }
 }
 
 .footer {
@@ -537,6 +554,11 @@ h1 {
         a {
           display: block;
           color: $color-black;
+          border-bottom: 1px solid $color-black;
+          transition: 0.2s;
+          &:hover {
+            color: #ff8800;
+          }
         }
       }
     }
@@ -1100,6 +1122,22 @@ h1 {
   &__name {
     margin-top: 40vh;
     font-size: (70rem/16);
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+}
+
+.about__head {
+  height: fit-content;
+}
+
+.license__image {
+  @include flex();
+  justify-content: space-around;
+  gap: 10%;
+  margin-top: (30em/16);
+  &--list {
+    width: 30%;
   }
 }
 
@@ -1109,5 +1147,125 @@ h1 {
   img {
     @include mx();
     width: 30%;
+  }
+}
+
+.about {
+  @include inner();
+
+  .heading {
+    &__2 {
+      font-size: (18rem/16);
+      margin-bottom: (10em/16);
+    }
+  }
+
+  &__content {
+    margin-bottom: (30em/16);
+  }
+  &__text {
+    font-size: (14em/16);
+    margin-bottom: (5em/16);
+    span {
+      display: inline-block;
+    }
+  }
+  &__dl {
+    display: flex;
+    gap: 10%;
+    margin-bottom: (10em/16);
+  }
+
+  &__dt {
+    font-size: (14rem/16);
+  }
+
+  &__dd {
+    font-size: (14rem/16);
+  }
+}
+
+.skill {
+  &__wrapper {
+    @include flex();
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  &__content {
+    width: 50%;
+    margin-bottom: (20em/16);
+  }
+}
+
+.topback {
+  &__button {
+    @include mx();
+    background-color: #0d0097;
+    font-size: (22rem/16);
+    text-align: center;
+    display: block;
+    width: fit-content;
+    @include mx();
+    padding: (0) (10em/16);
+    &:hover {
+      background-color: #ff1010;
+    }
+  }
+}
+
+.contact {
+  @include mx();
+  margin-top: (50em/16);
+  &__button {
+    background-color: #53c0ff;
+    font-size: (22rem/16);
+    text-align: center;
+    display: block;
+    width: fit-content;
+    @include mx();
+    padding: (0) (10em/16);
+    &:hover {
+      background-color: #ff1040;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .header {
+    &__name {
+      margin-top: 20vh;
+      font-size: (70rem/16);
+    }
+  }
+
+  .image__box {
+    @include mx();
+    margin: (50em/16) auto;
+    img {
+      @include mx();
+      width: 30%;
+    }
+  }
+}
+
+@media (min-width: 651px) {
+  .license__image {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5%;
+    &--list {
+      width: 10%;
+    }
+  }
+  .skill {
+    &__wrapper {
+      @include flex();
+      justify-content: space-around;
+      flex-direction: row;
+    }
+    &__content {
+      width: 20%;
+      margin-bottom: (20em/16);
+    }
   }
 }

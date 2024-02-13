@@ -25,16 +25,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.3/ScrollTrigger.min.js"></script>
   </head>
   <body>
-    <header class="header" id="pagetop">
+    <header class="header about__head" id="pagetop">
       <div class="header__gnavi navi">
         <h1 class="navi__head">
           <a href="#pagetop">OKIYAMA'S PORTFOLIO</a>
         </h1>
 
         <ul class="navi__content link">
-          <li class="link__list"><a href="#works">WORKS</a></li>
-          <li class="link__list"><a href="">ABOUT</a></li>
-          <li class="link__list"><a href="">CONTACT</a></li>
+          <li class="link__list"><a href="portfolio.html#works">WORKS</a></li>
+ <li class="link__list"><a href="portfolio_about.html">ABOUT</a></li>
+          <li class="link__list">
+            <a href="https://forms.gle/2kTLpnXaL5uNFH5C8" target="_blank"
+              >CONTACT</a
+            >
+          </li>
         </ul>
       </div>
       <div class="header__inner">
@@ -42,11 +46,106 @@
       </div>
 
       <div class="image__box">
-        <img src="./img/face.webp" alt="myface" />
+        <img src="./img/okiyama_image.webp" alt="okiyama naoto" />
       </div>
     </header>
     <main class="main">
       <div class="main__wrapper">
+        <section class="about" id="about">
+          <h1 class="about__title sectiontitle">About</h1>
+
+          <div class="about__wrapper">
+            <h2 class="heading__2"></h2>
+
+            <div class="about__content">
+              <dl class="about__dl">
+                <dt class="about__dt">氏名</dt>
+                <dd class="about__dd">沖山 直渡（おきやま　なおと）</dd>
+              </dl>
+
+              <dl class="about__dl">
+                <dt class="about__dt">趣味</dt>
+                <dd class="about__dd">アウトドア</dd>
+              </dl>
+            </div>
+            <div class="about__content">
+              <h2 class="heading__2">経歴</h2>
+              <p class="about__text">1999年愛知県生まれ</p>
+              <p class="about__text">
+                愛知大学経営学部経営学科流通マーケティングコース卒業
+              </p>
+
+              <p class="about__text">
+                トライデントコンピュータ専門学校Webデザイン学科在籍中
+              </p>
+            </div>
+
+            <div class="about__content">
+              <h2 class="heading__2">保有資格</h2>
+              <ul class="license">
+                <li class="license__list">
+                  <p class="about__text">
+                    公益社団法人 日本マーケティング協会公認 Advanced
+                    Marketer（マーケティング検定2級）
+                  </p>
+                </li>
+                <li class="license__list">
+                  <p class="about__text">
+                    Webクリエイター能力認定試験　エキスパート
+                  </p>
+                </li>
+              </ul>
+
+                <ul class="license__image">
+                <li class="license__image--list">
+<a href="https://www.openbadge-global.com/api/v1.0/openBadge/v2/Wallet/Public/GetAssertionShare/ZFUyT1NHYkJPSDQ2QnQyM0FIZ0R0dz09">
+<img src="./img/image_20240213101842.png" alt="マーケティング検定">
+</a>
+                </li>
+                <li class="license__image--list">
+                  <a href="https://www.openbadge-global.com/api/v1.0/openBadge/v2/Wallet/Public/GetAssertionShare/LzdNVW41cnB3V3BPdmsxbWdrQjBDdz09" target="_blank">
+<img src="./img/image_20240213101855.png" alt="webクリエイター技能検定"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="about__content">
+              <h2 class="heading__2">志望職種</h2>
+
+              <p class="about__text">Webデザイナー</p>
+
+              <p class="about__text">Webマーケター</p>
+
+              <p class="about__text">Webディレクター</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills" id="skills">
+          <h1 class="skill__title sectiontitle">SKILLS</h1>
+
+          <div class="skill__wrapper">
+            <div class="skill__content">
+              <h3 class="heading__3">HTML</h2>
+              <img src="./img/html__skill.webp" alt="" />
+            </div>
+
+            <div class="skill__content">
+                <h3 class="heading__3">CSS</h2>
+              <img src="./img/css__skill.webp" alt="" />
+            </div>
+
+            <div class="skill__content">
+                <h3 class="heading__3">JavaScript</h2>
+              <img src="./img/js__skill.webp" alt="" />
+            </div>
+
+            <div class="skill__content">
+                <h3 class="heading__3">Figma</h2>
+              <img src="./img/figma__skill.webp" alt="" />
+            </div>
+          </div>
+        </section>
+
         <section class="vision" id="vision">
           <h1 class="vision__title sectiontitle">VISION</h1>
 
@@ -83,12 +182,6 @@
                   私のデザインの基礎でもあります。 <br />
                 </dd>
               </dl>
-              <div class="license">
-                <p class="license__head">保有資格</p>
-                <p class="license__name">
-                  Webクリエイター能力認定試験　エキスパート
-                </p>
-              </div>
             </div>
             <div class="marketing container fadeInBottom" data-trigger>
               <h2 class="container__title">#MARKETING</h2>
@@ -105,19 +198,23 @@
                   デザイナーに私はなります。<br />
                 </dd>
               </dl>
-              <div class="license">
-                <p class="license__head">保有資格</p>
-                <p class="license__name">
-                  マーケティング検定 2級 Advanced Marketer
-                </p>
-              </div>
             </div>
           </div>
 
-          <div class="vision__detail">
-            <a class="vision__detail--button" href="portfolio_about.html"
-              >WHO IS NAOTO OKIYAMA??</a
+          <div class="topback">
+            <a class="topback__button" href="portfolio.html"
+              >BACK TO TOP</a
             >
+          </div>
+
+          <div class="contact">
+            <a
+              class="contact__button"
+              href="https://forms.gle/2kTLpnXaL5uNFH5C8"
+              target="_blank"
+              >CONTACT</a
+            >
+          </div>
           </div>
         </section>
       </div>
@@ -127,7 +224,5 @@
         <small><p>&copy; Okiyama Naoto 2024</p></small>
       </div>
     </footer>
-
-    <script src="./port.js"></script>
   </body>
 </html>
