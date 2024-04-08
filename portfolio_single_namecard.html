@@ -3,6 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      property="og:url"
+      content="https://ofs.thick.jp/portfolio/index.html"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="portfolio" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="OKIYAMA's Portfolio" />
+    <meta
+      property="og:image"
+      content="https://ofs.thick.jp/portfolio/img/ogpimage.webp"
+    />
     <title>Portfolio</title>
     <link
       rel="stylesheet"
@@ -23,15 +36,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.3/ScrollTrigger.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TXTGPB20SX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TXTGPB20SX");
+    </script>
   </head>
+
   <body>
     <header class="header" id="single">
       <div class="header__gnavi navi">
         <h1 class="navi__head">
-          <a href="portfolio.html#pagetop">OKIYAMA'S PORTFOLIO</a>
+          <a href="index.html#pagetop">OKIYAMA'S PORTFOLIO</a>
         </h1>
         <ul class="navi__content link">
-          <li class="link__list"><a href="portfolio.html#works">WORKS</a></li>
+          <li class="link__list"><a href="index.html#works">WORKS</a></li>
           <li class="link__list"><a href="portfolio_about.html">ABOUT</a></li>
           <li class="link__list">
             <a href="https://forms.gle/2kTLpnXaL5uNFH5C8" target="_blank"
@@ -223,9 +251,7 @@
             </div>
           </section>
           <div class="backlist">
-            <a class="backlist__btn" href="portfolio.html#works"
-              >BACK TO LIST</a
-            >
+            <a class="backlist__btn" href="index.html#works">BACK TO LIST</a>
           </div>
 
           <div class="contact">
@@ -241,9 +267,11 @@
     </main>
     <footer class="footer">
       <div class="footer__inner">
-        <small><p>&copy; Okiyama Naoto 2024</p></small>
+        <small>
+          <p>&copy; Okiyama Naoto 2024</p>
+        </small>
       </div>
     </footer>
-    <script src="./port.js"></script>
+    <script src="./js/port.js"></script>
   </body>
 </html>

@@ -23,15 +23,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.3/ScrollTrigger.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TXTGPB20SX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TXTGPB20SX");
+    </script>
   </head>
+
   <body>
     <header class="header" id="single">
       <div class="header__gnavi navi">
         <h1 class="navi__head">
-          <a href="portfolio.html#pagetop">OKIYAMA'S PORTFOLIO</a>
+          <a href="index.html#pagetop">OKIYAMA'S PORTFOLIO</a>
         </h1>
         <ul class="navi__content link">
-          <li class="link__list"><a href="portfolio.html#works">WORKS</a></li>
+          <li class="link__list"><a href="index.html#works">WORKS</a></li>
           <li class="link__list"><a href="portfolio_about.html">ABOUT</a></li>
           <li class="link__list">
             <a href="https://forms.gle/2kTLpnXaL5uNFH5C8" target="_blank"
@@ -414,7 +429,11 @@
               <p class="singlework__text">最初のロゴは以下の通り。</p>
 
               <div class="singlework__imagebox">
-                <img src="./img/bloglogo_first.svg" alt="旧ブログロゴ" />
+                <img
+                  class="bloglogo__image-before"
+                  src="./img/bloglogo_first.svg"
+                  alt="旧ブログロゴ"
+                />
               </div>
 
               <p class="singlework__text">
@@ -437,7 +456,11 @@
                 「バランス」という点に最大限の注意を払うことで、美しいデザインになったかなと思います。
               </p>
               <div class="singlework__imagebox">
-                <img src="./img/logo_detail.webp" alt="ロゴ詳細" />
+                <img
+                  class="bloglogo__image-detail"
+                  src="./img/logo_detail.webp"
+                  alt="ロゴ詳細"
+                />
               </div>
               <p class="singlework__text">
                 文字はすべて大文字、ベースのフォントを細めのフォント（Nokora）にすることで、強すぎない、軽い印象にしました。
@@ -487,9 +510,7 @@
           </section>
 
           <div class="backlist">
-            <a class="backlist__btn" href="portfolio.html#works"
-              >BACK TO LIST</a
-            >
+            <a class="backlist__btn" href="index.html#works">BACK TO LIST</a>
           </div>
           <div class="contact">
             <a
@@ -504,9 +525,11 @@
     </main>
     <footer class="footer">
       <div class="footer__inner">
-        <small><p>&copy; Okiyama Naoto 2024</p></small>
+        <small>
+          <p>&copy; Okiyama Naoto 2024</p>
+        </small>
       </div>
     </footer>
-    <script src="./port.js"></script>
+    <script src="./js/port.js"></script>
   </body>
 </html>

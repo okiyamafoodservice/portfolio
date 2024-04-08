@@ -3,6 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:url"
+      content="https://ofs.thick.jp/portfolio/index.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="portfolio" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="OKIYAMA's Portfolio" />
+    <meta
+      property="og:image"
+      content="https://ofs.thick.jp/portfolio/img/ogpimage.webp"
+    />
     <title>Portfolio</title>
     <link
       rel="stylesheet"
@@ -23,15 +35,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.3/ScrollTrigger.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TXTGPB20SX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TXTGPB20SX");
+    </script>
   </head>
+
   <body>
     <header class="header" id="single">
       <div class="header__gnavi navi">
         <h1 class="navi__head">
-          <a href="portfolio.html#pagetop">OKIYAMA'S PORTFOLIO</a>
+          <a href="index.html#pagetop">OKIYAMA'S PORTFOLIO</a>
         </h1>
         <ul class="navi__content link">
-          <li class="link__list"><a href="portfolio.html#works">WORKS</a></li>
+          <li class="link__list"><a href="index.html#works">WORKS</a></li>
           <li class="link__list"><a href="portfolio_about.html">ABOUT</a></li>
           <li class="link__list">
             <a href="https://forms.gle/2kTLpnXaL5uNFH5C8" target="_blank"
@@ -47,7 +74,7 @@
           <h1 class="singlework__head">WORKS</h1>
           <img
             class="singlework__topimage"
-            src="./img/works4image.png"
+            src="./img/works4image.webp"
             alt="紹介画像"
           />
           <p class="singlework__sub">漫画アプリUIデザイン</p>
@@ -178,86 +205,30 @@
             <p class="singlework__text">
               これまではWebサイトのデザインについて勉強をしてきましたが、UI/UXについては特に触れていませんでした。
             </p>
-            <div class="color">
-              <h5 class="singlework__heading3">配色</h5>
-              <p class="singlework__text">サイトの配色は以下の通りです。</p>
-              <div class="colorbox">
-                <span class="basecolor">ベースカラー #2A89B3</span>
-                <span class="maincolor">メインカラー #FFFFFF</span>
-                <span class="accentcolor">アクセントカラー #DD7C15</span>
-              </div>
-              <p class="singlework__text">
-                このカラーは独断ではなく、先述したアンケートの「熊野市のイメージカラーは何か」という質問の回答と実際に熊野市で体験したシーカヤックとSUPからのイメージを踏まえてクライアントと選定しています。
-              </p>
-              <p class="singlework__text">
-                ベースカラーは熊野市の太平洋、メインカラーは太平洋の波飛沫、アクセントカラーは熊野市の名産のみかんからサンプリングをしています。
-              </p>
-
-              <span class="gradation__ground"></span>
-            </div>
 
             <p class="singlework__text">
-              トップページの中央部〜下部にかけては背景色にグラデーションをかけており、これは沿岸部から外洋にかけて深い青に染まっていく、熊野の海を表現しています。
+              そこで一度UI/UXについて基本的な事項を整理をしてみました。
             </p>
 
-            <div class="singlework__imagebox"></div>
+            <ul class="uxmatter">
+              <li class="uxmatter__list">
+                UX（ユーザーエクスペリエンス）という大枠の中のUIデザイン
+              </li>
+              <li class="uxmatter__list">
+                ユーザーが迷わず利用することができる
+              </li>
+              <li class="uxmatter__list">ユースケースの整理</li>
+            </ul>
 
-            <div class="infoarch">
-              <h5 class="singlework__heading3">情報設計</h5>
-              <p class="singlework__text">
-                情報の整理にも心がけています。<br />
-                クライアント側から「お知らせや追加情報の即時更新を可能にしてほしい」という要望があり、WordPressを用いたサイト構築を行っています。
-              </p>
-              <p class="singlework__text">
-                ただ更新したものを表示するだけであれば良いというわけではなく、カテゴリーごとに分けることで、求めている情報の迅速な確認が可能になると考え、トップページのお知らせ表示セクションはJavaScriptを用いたタブ切り替えによって、情報の取捨選択を可能としました。
-              </p>
-
-              <div class="tab">
-                <ul class="tabhead__list tab__menu">
-                  <li class="tab__menu-item is-active sp" data-tab="01">
-                    スマートフォン
-                  </li>
-                  <li class="tab__menu-item is-active pc" data-tab="02">
-                    デスクトップ
-                  </li>
-                </ul>
-
-                <div class="tab__panel">
-                  <div
-                    class="tab__panel-box tab__panel-box001 is-show"
-                    data-panel="01"
-                  >
-                    <div class="singlework__imagebox tabsp">
-                      <img
-                        class="singlework__infosectionimage"
-                        src="./img/infosectionsp.png"
-                        alt="全景"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="tab__panel-box tab__panel-box002" data-panel="02">
-                    <div class="singlework__imagebox tabpc">
-                      <img
-                        class="singlework__infosectionimage"
-                        src="./img/infosection.png"
-                        alt="全景"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <p class="singlework__text">
-                カテゴリーも色別表示を行っており、一目で判別できるようにしています。
-              </p>
-            </div>
+            <p class="singlework__text">
+              この３点がUIデザインの基本事項であると結論づけ、それに基づいたデザインを行います。
+            </p>
 
             <div class="catchcopy">
-              <h5 class="singlework__heading3">キャッチコピー</h5>
-              <p class="singlework__text">
-                サイト内のキャッチコピーの制作も担わせていただきました。
-              </p>
+              <h5 class="singlework__heading3">
+                UX（ユーザーエクスペリエンス）
+              </h5>
+              <p class="singlework__text">ユーザーが求めている経験は</p>
               <div class="maincatch">
                 <p class="singlework__text catchtext">
                   メインのキャッチコピー「いざ、太平洋へ」
@@ -331,9 +302,7 @@
           </section>
 
           <div class="backlist">
-            <a class="backlist__btn" href="portfolio.html#works"
-              >BACK TO LIST</a
-            >
+            <a class="backlist__btn" href="index.html#works">BACK TO LIST</a>
           </div>
 
           <div class="contact">
@@ -349,9 +318,11 @@
     </main>
     <footer class="footer">
       <div class="footer__inner">
-        <small><p>&copy; Okiyama Naoto 2024</p></small>
+        <small>
+          <p>&copy; Okiyama Naoto 2024</p>
+        </small>
       </div>
     </footer>
-    <script src="./port.js"></script>
+    <script src="./js/port.js"></script>
   </body>
 </html>

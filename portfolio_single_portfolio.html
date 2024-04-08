@@ -23,15 +23,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.3/ScrollTrigger.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TXTGPB20SX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TXTGPB20SX");
+    </script>
   </head>
+
   <body>
     <header class="header" id="single">
       <div class="header__gnavi navi">
         <h1 class="navi__head">
-          <a href="portfolio.html#pagetop">OKIYAMA'S PORTFOLIO</a>
+          <a href="index.html#pagetop">OKIYAMA'S PORTFOLIO</a>
         </h1>
         <ul class="navi__content link">
-          <li class="link__list"><a href="portfolio.html#works">WORKS</a></li>
+          <li class="link__list"><a href="index.html#works">WORKS</a></li>
           <li class="link__list"><a href="portfolio_about.html">ABOUT</a></li>
           <li class="link__list">
             <a href="https://forms.gle/2kTLpnXaL5uNFH5C8" target="_blank"
@@ -110,7 +125,7 @@
             <p class="ovcontent__head">LINK</p>
             <ul class="ovcontent__wrap wraplist">
               <li class="ovcontent__part wraplist__content">
-                <a href="https://ofs.thick.jp/portfolio/portfolio.html">
+                <a href="https://ofs.thick.jp/portfolio/index.html">
                   OKIYAMA'S PORTFOLIO
                 </a>
               </li>
@@ -212,7 +227,7 @@
                 <span class="basecolor portfolio">ベースカラー #FFFFFF</span>
                 <span class="maincolor portfolio">メインカラー#ECECEC</span>
                 <span class="accentcolor portfolio"
-                  >アクセントカラー #11F340</span
+                  >アクセントカラー #35C954</span
                 >
               </div>
               <p class="singlework__text">
@@ -239,7 +254,7 @@
               </p>
 
               <p class="singlework__text">
-                このことよりアクセントカラーを自身の持っているテントに近いカラーの「#11F340」として決定しました。
+                このことよりアクセントカラーを自身の持っているテントに近いカラーの「#35C954」として決定しました。
                 この他、フッターやボタンにも山岳テントのカラーリングを引用しています。
               </p>
 
@@ -298,9 +313,7 @@
           </section>
 
           <div class="backlist">
-            <a class="backlist__btn" href="portfolio.html#works"
-              >BACK TO LIST</a
-            >
+            <a class="backlist__btn" href="index.html#works">BACK TO LIST</a>
           </div>
 
           <div class="contact">
@@ -316,9 +329,11 @@
     </main>
     <footer class="footer">
       <div class="footer__inner">
-        <small><p>&copy; Okiyama Naoto 2024</p></small>
+        <small>
+          <p>&copy; Okiyama Naoto 2024</p>
+        </small>
       </div>
     </footer>
-    <script src="./port.js"></script>
+    <script src="./js/port.js"></script>
   </body>
 </html>
