@@ -397,7 +397,7 @@ h1 {
 }
 
 .footer {
-  background-color: #fdfe3c;
+  background-color: #f1b04a;
 }
 .footer__inner {
   margin-left: auto;
@@ -541,7 +541,7 @@ h1 {
 .singlework {
   margin-left: auto;
   margin-right: auto;
-  width: 84.375%;
+  width: 70.3125%;
   max-width: 1400px;
 }
 .singlework__head {
@@ -576,10 +576,11 @@ h1 {
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 0.5625em 0.125em;
-  margin-bottom: 0.25em;
+  margin-bottom: 1.25em;
 }
 .singlework .ovcontent__part {
-  padding-left: 0.625em;
+  padding: 0 0.625em;
+  margin-bottom: 0.75em;
 }
 .singlework .ovcontent .wraplist {
   display: flex;
@@ -598,6 +599,9 @@ h1 {
 }
 .singlework .ovcontent .wraplist__content span {
   display: inline-block;
+}
+.singlework .ovcontent .wraplist__content.tech {
+  border: 0.5px solid #000;
 }
 .singlework .ovcontent .wraplist__content a {
   display: block;
@@ -721,6 +725,7 @@ h1 {
   width: 100%;
   display: block;
   background: linear-gradient(to right, #2590be, #294781);
+  margin-bottom: 1em;
 }
 .singlework .pattern__1 {
   height: 10vh;
@@ -1045,7 +1050,7 @@ h1 {
     width: -moz-fit-content;
     width: fit-content;
     padding: 0 0.5625em 0.125em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1.25em;
   }
   .singlework .ovcontent__part {
     padding-left: 0.625em;
@@ -1131,6 +1136,8 @@ h1 {
   .singlework__text {
     font-size: 1.125rem;
     margin-bottom: 2em;
+    margin-right: auto;
+    margin-left: auto;
   }
   .singlework__text.catchtext {
     font-weight: 600;
@@ -1184,6 +1191,7 @@ h1 {
 }
 .license__image--list {
   width: 30%;
+  margin-bottom: 10%;
 }
 
 .image__box {

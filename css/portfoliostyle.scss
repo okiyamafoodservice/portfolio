@@ -26,7 +26,7 @@ $colors: #2590be, #35c954, #ff8c00, #13325c, #8d2422;
 @mixin pcinner() {
   margin-left: auto;
   margin-right: auto;
-  width: (1080/1280) * 100%;
+  width: (900/1280) * 100%;
   max-width: 1400px;
 }
 
@@ -428,7 +428,7 @@ h1 {
     @include inner();
   }
 
-  background-color: #fdfe3c;
+  background-color: #f1b04a;
   small {
     @include mx();
     p {
@@ -609,11 +609,12 @@ h1 {
       color: $color-white;
       width: fit-content;
       padding: 0 (9em/16) (2em/16);
-      margin-bottom: (4em/16);
+      margin-bottom: (20em/16);
     }
 
     &__part {
-      padding-left: (10em/16);
+      padding: 0 (10em/16);
+      margin-bottom: (12em/16);
     }
 
     .wraplist {
@@ -626,6 +627,9 @@ h1 {
         color: $color-black;
         span {
           display: inline-block;
+        }
+        &.tech {
+          border: 0.5px solid #000;
         }
         a {
           display: block;
@@ -753,6 +757,7 @@ h1 {
     width: 100%;
     display: block;
     background: linear-gradient(to right, #2590be, #294781);
+    margin-bottom: (16em/16);
   }
 
   .pattern {
@@ -1094,7 +1099,7 @@ h1 {
         color: $color-white;
         width: fit-content;
         padding: 0 (9em/16) (2em/16);
-        margin-bottom: (8em/16);
+        margin-bottom: (20em/16);
       }
 
       &__part {
@@ -1146,6 +1151,7 @@ h1 {
       font-size: (22rem/16);
       text-align: center;
       margin-bottom: (15em/16);
+
       &2 {
         font-weight: 500;
         font-size: (20rem/16);
@@ -1166,6 +1172,8 @@ h1 {
     &__text {
       font-size: (18rem/16);
       margin-bottom: (32em/16);
+
+      @include mx();
       &.catchtext {
         font-weight: 600;
       }
@@ -1226,6 +1234,7 @@ h1 {
   margin-top: (30em/16);
   &--list {
     width: 30%;
+    margin-bottom: 10%;
   }
 }
 
